@@ -5,4 +5,4 @@ debias = 1
 query= avg
 truncate_geo = 0
 RR-mechanism = d
-databases = synthetic
+databases = exp1/synthetic
