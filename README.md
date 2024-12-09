@@ -96,8 +96,8 @@ TO-DO: Add Tag
 ### Set up the environment (Only for Functional and Reproduced badges)
 On a Linux machine:
 
-TO-DO: ADD GIT CLONE
-```bash 
+```bash
+git clone https://github.com/andathan/metric_privacy_shuffle_model && cd metric_privacy_shuffle_model
 sudo apt update && sudo apt install -y python3 python3-pip && pip3 install pandas numpy scipy matplotlib mpmath
 ```
 
