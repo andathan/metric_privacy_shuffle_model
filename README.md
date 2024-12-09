@@ -42,7 +42,7 @@ python3 is required
 No special hardware is required. 
 
 ### Software Requirements
-python3 is required with the following libraries:
+python3 is required with the following commonly used libraries:
 1.	pandas
 2.	numpy
 3.	scipy
