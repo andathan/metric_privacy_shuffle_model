@@ -144,6 +144,7 @@ The experiment tests the utility (MAE) of the proposed mechanisms on a synthetic
 The parameters of the experiment are loaded from the confg file. 
 
 Run the above command and compare the result to Figure 4. 
+
 NOTE: Due to the randomness of the created dataset, the resulting Figure might be slightly different than Figure 4. The goal is to check that SGDL-Shuffle is better than Geo-Shuffle which in turn is better than RR-Shuffle. Then RR-Shuffle should be better than Geo local when the number of users is increased.
 
 We use this experiment for Main Result 1, i.e. that SGDL-Shuffle has lower utility loss than every other mechanism, followed by Geo-Shuffle and then RR-shuffle (when n > aprox. 80). 
