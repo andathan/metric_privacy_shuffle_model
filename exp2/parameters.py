@@ -5,7 +5,7 @@ import mpmath as mp
 parametrizes the experiment
 """
 ############## PARAMETERS ####################
-db_name = "austin.csv" #gowalla.txt or austin.csv
+db_name = "exp2/austin.csv" #gowalla.txt or austin.csv
 #to_do: For gowalla.txt change at make_grid() gps coordinates of corners
 
 desired_epsilon = float(sys.argv[1]) #0.001
@@ -37,7 +37,7 @@ quick = 0 #the RR will run quickly but with an estimation
 invalid = 0
 if number_of_rows =="ALL":
 	number_of_rows = 479529
-if(db_name == "austin.csv"):
+if(db_name == "exp2/austin.csv"):
 	SEPARATOR = ','
 elif (db_name == "gowalla.txt"):
 	SEPARATOR = '\t'
