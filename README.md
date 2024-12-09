@@ -9,6 +9,7 @@ Requested Badge: **Available**, **Functional**, **Reproduced**
 ## Description
 This repository includes the code for the experiments of our paper: Enhancing Metric Privacy With a Shuffler
 
+
 1. exp1 and exp2 folders 
 
 	Experiments of Section 6 
@@ -28,6 +29,8 @@ This repository includes the code for the experiments of our paper: Enhancing Me
 5. 	plot_gdl.py (minor script)
 
 	Visualization of the SGDL distribution  (Figure 2)
+
+
 
 ### Security/Privacy Issues and Ethical Concerns (All badges)
 No ethical concerns or security/privacy issues. 
@@ -53,8 +56,11 @@ You dont need to run the script again, just use the "synthetic" dataset as it is
 For the second experiment, the dataset is stored in austin.csv. The dataset is taken from:
 https://data.world/tronovan/austin-address-with-gps-coords. The dataset is already in exp2 folder, you do not need to download anything.
 
+
+
 ### Estimated Time and Storage Consumption
-No extra storage space is taken upon execution of the experiments. The experiment scripts take only 35MB of space.
+No extra storage space is taken upon execution of the experiments. The experiment scripts take only 30MB of space.
+
 
 ##### Estimated Time:
 ###### Less than a minute
@@ -66,16 +72,21 @@ No extra storage space is taken upon execution of the experiments. The experimen
 2. exp2.py
 3.  plot_conj.py
    
-[For plot_conj.py to compute faster (less than 5 minutes) reduce the parameter D_MAX to 20 to produce results only when d=1,2,...,20 (LINE 43)]
+[To compute faster (less than 5 minutes) reduce the parameter D_MAX to 20 to produce results only when d=1,2,...,20 (LINE 43)]
+
 
 ###### Aprox. 10 hours
 
 1. corrupted_shuffler.py
    
-[For corrupted_shuffler.py to compute faster (approx 30 minutes) reduce the parameter N_MAX to 100 to produce results only when there are 1,2...,100 users  (LINE 46)]
+[To compute faster (approx 30 minutes) reduce the parameter N_MAX to 100 to produce results only when there are 1,2...,100 users  (LINE 46)]
+
+
+
 
 ## Environment 
 python3 and the above commonly used libraries should be installed.
+
 
 ### Accessibility (All badges)
 https://github.com/andathan/metric_privacy_shuffle_model
@@ -84,11 +95,9 @@ TO-DO: Add Tag
 
 ### Set up the environment (Only for Functional and Reproduced badges)
 On a Linux machine:
-<<<<<<< HEAD
-=======
 
-```bash
-git clone https://github.com/andathan/metric_privacy_shuffle_model && cd metric_privacy_shuffle_model
+TO-DO: ADD GIT CLONE
+```bash 
 sudo apt update && sudo apt install -y python3 python3-pip && pip3 install pandas numpy scipy matplotlib mpmath
 ```
 
@@ -96,7 +105,8 @@ sudo apt update && sudo apt install -y python3 python3-pip && pip3 install panda
 ### Testing the Environment (Only for Functional and Reproduced badges)
 First try running the scripts which do not take much time:
 ```bash
-python3 plot_conj.py 0.2 0.001 100 
+python3 plot_gdl.py
+python3 calculate_boost.py 
 ```
 
 If it runs smoothly, you are good to go!
@@ -126,7 +136,7 @@ This is intuitive as setting the number of users to 1 results to the worst priva
 #### Experiment 1: Synthetic data experiment (Section 6.2., Figure 4)
 
 ```bash
-cd exp1 && python3 exp1.py confg 0.1 0.001
+python3 exp1/exp1.py confg 0.1 0.001
 ```
 
 Takes approximately 1-2 hours to run.
@@ -142,7 +152,7 @@ We use this experiment for Main Result 1, i.e. that SGDL-Shuffle has lower utili
 #### Experiment 2: Real world location experiment (Section 6.3., Figure 5)
 
 ```bash
-cd exp2 && python3 exp2.py 0.15 4000 1000 600
+python3 exp2/exp2.py 0.15 4000 1000 600
 ```
 
 Takes approximately 1-2 hours to run.
@@ -213,3 +223,5 @@ Note that n is the number of users, each having an integer value from 0 to k.
 
 
 The code is licensed under GNU General Public License v3.0.
+
+
