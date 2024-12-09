@@ -101,6 +101,8 @@ git clone https://github.com/andathan/metric_privacy_shuffle_model && cd metric_
 sudo apt update && sudo apt install -y python3 python3-pip && pip3 install pandas numpy scipy matplotlib mpmath
 ```
 
+(Probably these widely-used libraries are already installed in your machine. This is the reason we are not providing any Docker containers.)
+
 
 ### Testing the Environment (Only for Functional and Reproduced badges)
 ```bash
