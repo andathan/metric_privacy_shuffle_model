@@ -1,17 +1,10 @@
 """
 Visualizes the boost of Geo-Shuffle compared to the standard Geometric Mechanism
 
-python3 calculate_boost.py [geo_epsilon] [delta]
+python3 calculate_boost.py 
 
-e.g. for blue line of Figure 3:
-python3 calculate_boost.py 0.1 0.001 
-
-and the rest lines with:
-python3 calculate_boost.py 0.2 0.001 
-python3 calculate_boost.py 0.3 0.001 
-python3 calculate_boost.py 0.4 0.001 
-python3 calculate_boost.py 0.8 0.001 
-
+e.g. for Figure 3:
+python3 calculate_boost.py 
 """
 
 
@@ -38,10 +31,13 @@ mp.dps = 500  #depth of mpmath library since we are handling extremely small num
 d = 1
 N_MAX = 500 #maximum number of users
 
-assert len(sys.argv)==3
+e1 = 0.1
+e2 = 0.2
+e3 = 0.3
+e4 = 0.4
+e5 = 0.8
 
-e1 = float(sys.argv[1])
-delta = float(sys.argv[2])
+delta = 0.001
 
 
 def geometric (epsilon,value,max_value,c):
@@ -116,6 +112,10 @@ def find_e_of_sgdl(delta,geo_epsilon,b):
 
 
 geo_shuffle_e1 = []
+geo_shuffle_e2 = []
+geo_shuffle_e3 = []
+geo_shuffle_e4 = []
+geo_shuffle_e5 = []
 n_list = []
 n_iter_list = []
 
@@ -135,7 +135,15 @@ for i in range (100, N_MAX, 50):
 for n in n_iter_list:
 	n_list.append(n)
 	e1_boost = find_e_of_sgdl(delta,e1,n)
+	e2_boost = find_e_of_sgdl(delta,e2,n)
+	e3_boost = find_e_of_sgdl(delta,e3,n)
+	e4_boost = find_e_of_sgdl(delta,e4,n)
+	e5_boost = find_e_of_sgdl(delta,e5,n)
 	geo_shuffle_e1.append(e1_boost)
+	geo_shuffle_e2.append(e2_boost)
+	geo_shuffle_e3.append(e3_boost)
+	geo_shuffle_e4.append(e4_boost)
+	geo_shuffle_e5.append(e5_boost)
 
 
 
@@ -155,6 +163,12 @@ plt.gca().set_ylabel(r'$\varepsilon$', fontsize = 42)
 plt.ylabel(epsilon_latex)
 plt.xlabel("Number of users", fontsize = 40)
 plt.plot(n_list, geo_shuffle_e1, label = epsilon_geo_latex + " = " + str(e1))
+plt.plot(n_list, geo_shuffle_e2, label = epsilon_geo_latex + " = " + str(e2))
+plt.plot(n_list, geo_shuffle_e3, label = epsilon_geo_latex + " = " + str(e3))
+plt.plot(n_list, geo_shuffle_e4, label = epsilon_geo_latex + " = " + str(e4))
+plt.plot(n_list, geo_shuffle_e5, label = epsilon_geo_latex + " = " + str(e5))
+
+
 plt.legend()
 plt.show()
 
