@@ -135,7 +135,7 @@ This is intuitive as setting the number of users to 1 results to the worst priva
 #### Experiment 1: Synthetic data experiment (Section 6.2., Figure 4)
 
 ```bash
-python3 exp1/exp1.py confg 0.1 0.001
+python3 exp1/exp1.py exp1/confg 0.1 0.001
 ```
 
 Takes approximately 1-2 hours to run.
