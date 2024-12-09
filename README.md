@@ -54,7 +54,7 @@ For the first experiment, create_random_data.py creates a (uniformly) random syn
 You dont need to run the script again, just use the "synthetic" dataset as it is.
 
 For the second experiment, the dataset is stored in austin.csv. The dataset is taken from:
-https://data.world/tronovan/austin-address-with-gps-coords
+https://data.world/tronovan/austin-address-with-gps-coords. The dataset is already in exp2 folder, you do not need to download anything.
 
 
 
