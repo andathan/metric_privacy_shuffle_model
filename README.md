@@ -219,7 +219,7 @@ You can use your own dataset on exp1 by changing the line "databases" in confg.
 
 You can use your own dataset on exp2 by changing the line "db_name" in "parameters.py".
 
-Note that n is the number of users, each having an integer value from 0 to k. 
+Note that n is the number of users, each having an integer value from 0 to k (hence k specifies the maximum possible value). 
 
 
 The code is licensed under GNU General Public License v3.0.
