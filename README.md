@@ -2,7 +2,7 @@
 
 Paper title: **Enhancing Metric Privacy With a Shuffler**
 
-Artifacts HotCRP Id: **#Enter your HotCRP Id here** (not your paper Id, but the artifacts id)
+Artifacts HotCRP Id: **9** (2025.2)
 
 Requested Badge: **Available**, **Functional**, **Reproduced**
 
@@ -11,18 +11,23 @@ This repository includes the code for the experiments of our paper: Enhancing Me
 
 
 1. experiments 
+
 	Experiments of Section 6 
 
 2. calculate_boost.py 
+
     Calculation of the privacy boost of Geo-Shuffle (Section 4.2. | Figure 3)
 
 3. corrupted_shuffler.py
+
 	Plots the privacy of the mechanisms when the shuffler is corrupted (Figure 6)
 
 4. plot_conj.py
+
 	Plots the Conjecture B.3 (Figures 9-12)
 
 5. 	plot_gdl.py
+
 	Visualization of the SGDL distribution  (Figure 2)
 
 
@@ -83,8 +88,9 @@ python3 and the above commonly used libraries should be installed.
 
 
 ### Accessibility (All badges)
-TO-DO: ADD GIT
-For repositories that evolve over time (e.g., Git Repositories ), specify a specific commit-id or tag to be evaluated.
+https://github.com/andathan/metric_privacy_shuffle_model
+
+TO-DO: Add Tag
 
 ### Set up the environment (Only for Functional and Reproduced badges)
 On a Linux machine:
@@ -219,3 +225,8 @@ You can use your own dataset on exp1 by changing the line "databases" in confg.
 You can use your own dataset on exp2 by changing the line "db_name" in "parameters.py".
 
 Note that n is the number of users, each having an integer value from 0 to k. 
+
+
+The code is licensed under GNU General Public License v3.0.
+
+
