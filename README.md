@@ -72,14 +72,14 @@ No extra storage space is taken upon execution of the experiments. The experimen
 2. exp2.py
 3.  plot_conj.py
    
-[To compute faster (less than 5 minutes) reduce the parameter D_MAX to 20 to produce results only when d=1,2,...,20 (LINE 43)]
+[For plot_conj.py to compute faster (less than 5 minutes) reduce the parameter D_MAX to 20 to produce results only when d=1,2,...,20 (LINE 43)]
 
 
 ###### Aprox. 10 hours
 
 1. corrupted_shuffler.py
    
-[To compute faster (approx 30 minutes) reduce the parameter N_MAX to 100 to produce results only when there are 1,2...,100 users  (LINE 46)]
+[For corrupted_shuffler.py to compute faster (approx 30 minutes) reduce the parameter N_MAX to 100 to produce results only when there are 1,2...,100 users  (LINE 46)]
 
 
 
