@@ -105,7 +105,7 @@ sudo apt update && sudo apt install -y python3 python3-pip && pip3 install panda
 ### Testing the Environment (Only for Functional and Reproduced badges)
 First try running the scripts which do not take much time:
 ```bash
-python3 plot_conj.py 0.2 0.001 100 
+python3 plot_gdl.py 10 0.5 
 ```
 
 If it runs smoothly, you are good to go!
