@@ -26,7 +26,7 @@ This repository includes the code for the experiments of our paper: Enhancing Me
 
 	Plots the Conjecture B.3 (Figures 9-12)
 
-5. 	plot_gdl.py
+5. 	plot_gdl.py (minor script)
 
 	Visualization of the SGDL distribution  (Figure 2)
 
