@@ -59,7 +59,7 @@ https://data.world/tronovan/austin-address-with-gps-coords. The dataset is alrea
 
 
 ### Estimated Time and Storage Consumption
-No extra storage space is taken upon execution of the experiments. The experiment scripts take only 30MB of space.
+No extra storage space is taken upon execution of the experiments. The experiment scripts take only 35MB of space.
 
 
 ##### Estimated Time:
