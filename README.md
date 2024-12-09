@@ -126,7 +126,7 @@ This is intuitive as setting the number of users to 1 results to the worst priva
 #### Experiment 1: Synthetic data experiment (Section 6.2., Figure 4)
 
 ```bash
-python3 exp1/exp1.py confg 0.1 0.001
+cd exp1 && python3 exp1.py confg 0.1 0.001
 ```
 
 Takes approximately 1-2 hours to run.
@@ -142,7 +142,7 @@ We use this experiment for Main Result 1, i.e. that SGDL-Shuffle has lower utili
 #### Experiment 2: Real world location experiment (Section 6.3., Figure 5)
 
 ```bash
-python3 exp2/exp2.py 0.15 4000 1000 600
+cd exp2 && python3 exp2.py 0.15 4000 1000 600
 ```
 
 Takes approximately 1-2 hours to run.
