@@ -10,7 +10,7 @@ because the mechanism cannot achieve the desired privacy for this combination of
 python3 corrupted_shuffler.py [epsilon1] [epsilon2] [delta] 
 
 e.g. for Figure 6:
-python3 corrupted_shuffler.py 0.05 0.2 0.001
+python3 corrupted_shuffler.py 0.05 0.2 0.01
 """
 
 
@@ -41,7 +41,7 @@ d=1 #distance between datasets, should be set to 1
 e_threshold = 0.001 #how close the binary search is ok to get to epsilon to consider that it has found it
 k = 1000 #maximum value each user can have
 N_MAX = 1000 #maximum number of users
-recursion_counter = 0 #program crashes if the recursion depth is above 100
+recursion_counter = 0 #program crashes if the recursion depth r above 100
 
 
 def use_binary_search (target_e,delta,n,e_threshold,MAX_E,MIN_E):
@@ -73,7 +73,7 @@ def find_e_of_sgdl(delta,geo_epsilon,b):
 	SGDL-Shuffle:
 	Finds the resulting epsilon of SGDL-Shuffle (Theorem 5.1)
 	"""
-	t = geo_epsilon/(math.sqrt(b))
+	t = 2 * geo_epsilon/(math.sqrt(b))
 	p =np.exp(-geo_epsilon)
 	try:
 		moment_generating_function = ((mp.mpf(1-p)*mp.mpf(1-p))  / ( mp.mpf(1-p*mp.mpf(math.e**mp.mpf(t))  ) *mp.mpf(1-p*mp.mpf(math.e**mp.mpf(-t))  ) )) ** mp.mpf(b)
@@ -217,7 +217,7 @@ a_list = []
 #For RR-Shuffle, Geo-Shuffle and SGDL -Shuffle
 #for both epsilons
 
-for n in range(1,N_MAX,5):
+for n in range(2,N_MAX,5):
 	recursion_counter=0
 	print("Running for ",n,"/",N_MAX)
 	results_sgdl.append(compute_privacy_sgdl_shuffle(epsilon,1/n,0))
