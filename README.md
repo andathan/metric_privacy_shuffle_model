@@ -10,7 +10,7 @@ Requested Badge: **Available**, **Functional**, **Reproduced**
 This repository includes the code for the experiments of our paper: Enhancing Metric Privacy With a Shuffler
 
 
-1. experiments 
+1. exp1 and exp2 folders 
 
 	Experiments of Section 6 
 
