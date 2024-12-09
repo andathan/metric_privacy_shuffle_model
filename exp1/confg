@@ -1,0 +1,8 @@
+MAX_RUNS = 1000
+n = 300
+k = 1000
+debias = 1
+query= avg
+truncate_geo = 0
+RR-mechanism = d
+databases = synthetic
