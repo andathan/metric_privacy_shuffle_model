@@ -116,14 +116,14 @@ If it runs smoothly, you are good to go!
 ### Main Results and Claims
 
 #### Main Result 1: SGDL-Shuffle offers the best utility (MAE), followed by Geo-Shuffle and then by RR-Shuffle. 
-
+This is shown by the experiments of Section 6 (folders exp1 and exp2). The utility loss should be the smallest on SGDL-Shuffle. 
 
 #### Main Result 2: Geo-Shuffle amplifies the privacy of Geo-Local (Figure 3)
 Consider the Geometric Mechanism in the Local Model (Geo-Local) with epsilon = epsilon_geo. Adding a shuffler to this mechanism (Section 4) results in better privacy (formally calculated in Theorem 4.2.), shown in Figure 3.
 
 #### Main Result 3: The privacy of SGDL-Shuffle diminishes when the shuffler is compromised; Geo-Shuffle still maintains a reasonable privacy.
 
-Consider the Geometric Mechanism in the Local Model (Geo-Local) with epsilon = epsilon_geo. Adding a shuffler to this mechanism (Section 4) results in better privacy (formally calculated in Theorem 4.2.), shown in Figure 3.
+In the case the shuffler is compromised the 3 mechanisms do not behave the same. SGDL-Shuffle's privacy significantly worsens, whereas Geo-Shuffle retains a sufficient level of privacy as discussed in Section 7 shown in Figure 6
 
 
 #### Main Result 4: Validity of Conjecture B.3: d=1 maximizes the ratio (4)
@@ -133,12 +133,6 @@ This is intuitive as setting the number of users to 1 results to the worst priva
 
 
 ### Experiments 
-List each experiment the reviewer has to execute. Describe:
- - How to execute it in detailed steps.
- - What the expected result is.
- - How long it takes and how much space it consumes on disk. (approximately)
- - Which claim and results does it support, and how.
-
 #### Experiment 1: Synthetic data experiment (Section 6.2., Figure 4)
 
 ```bash
@@ -153,7 +147,7 @@ The parameters of the experiment are loaded from the confg file.
 
 Run the above command and compare the result to Figure 4. 
 
-We use this experiment for Main Result 1, i.e. that SGDL-Shuffle has lower utility loss than every other mechanism, followed by Geo-Shuffle and then RR-shuffle (when n > aprox. 60). 
+We use this experiment for Main Result 1, i.e. that SGDL-Shuffle has lower utility loss than every other mechanism, followed by Geo-Shuffle and then RR-shuffle (when n > aprox. 80). 
 
 #### Experiment 2: Real world location experiment (Section 6.3., Figure 5)
 
