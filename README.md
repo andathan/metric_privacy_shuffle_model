@@ -91,7 +91,7 @@ TO-DO: Add Tag
 On a Linux machine:
 
 ```bash
-wget https://github.com/andathan/metric_privacy_shuffle_model/archive/refs/tags/pets_code.tar.gz && tar -xzf pets_code.tar.gz && cd metric_privacy_shuffle_model-pets_code
+git clone https://github.com/andathan/metric_privacy_shuffle_model && cd metric_privacy_shuffle_model
 sudo apt update && sudo apt install -y python3 python3-pip && pip3 install pandas numpy scipy matplotlib mpmath
 ```
 
