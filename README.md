@@ -204,7 +204,7 @@ Figure 12:
 python3 plot_conj.py 0.8 0.001 10000
 ```
 
-Compare the results with the corresponding Figures. Observe that in all cases d=1 maximizes the ratio. 
+Compare the results with the corresponding Figures. Observe that in all cases d=1 maximizes the ratio, concluding in Main Result 4.
 
 
 ## Limitations (Only for Functional and Reproduced badges)
