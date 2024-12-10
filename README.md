@@ -181,10 +181,10 @@ python3 corrupted_shuffler.py 0.05 0.2 0.01
 
 Compare the results with Figure 6.
 
-We use this experiment to conclude in Main Result 3, i.e., SGDL-Shuffle’s privacy is significantly worse (epsilon_L is much larger than epsilon_S), while Geo-Shuffle still retains a reasonable level of privacy (epsilon_L is only slightly larger than epsilon_S).
-Recall that epsilon represents the privacy loss, meaning that a larger \epsilon results in worse privacy.
+We use this experiment to conclude in Main Result 3, i.e. SGDL-Shuffle’s privacy is significantly worse (epsilon_L is much larger than epsilon_S), while Geo-Shuffle still retains a reasonable level of privacy (epsilon_L is only slightly larger than epsilon_S).
+Recall that epsilon represents the privacy loss, meaning that a larger epsilon results in worse privacy.
 
-Note: Some values for the red line (RR-Shuffle) appear to be missing. This arises from the constraints of Theorem 3.1, which we explain in Appendix A.
+Note: Some values for the red lines (RR-Shuffle) appear to be missing. This arises from the constraints of Theorem 3.1, which we explain in Appendix A.
 
 #### Experiment 5: Validity of Conjecture B.3: d=1 maximizes the ratio (4)
 Figures 10-12 experimentally show the validity of Conjecture B.3. for any combination of parameters. In each figure, the script outputs the result of the ratio (4), which we name as the function K(r,d), as d increases. Multiple values are shown for r (an integer which corresponds to alpha of Theorem 4.2. and ratio (4) ).
