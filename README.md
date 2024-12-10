@@ -144,7 +144,7 @@ NOTE: Due to the randomness of the created dataset, the resulting Figure might b
 
 We use this experiment for Main Result 1, i.e. that SGDL-Shuffle has lower utility loss than every other mechanism, followed by Geo-Shuffle and then RR-shuffle. 
 
-#### Experiment 2: Real world location experiment (Section 6.3., Figure 5)
+#### Experiment 2: Real world location data experiment (Section 6.3., Figure 5)
 
 ```bash
 python3 exp2/exp2.py 0.15 4000 1000 600
