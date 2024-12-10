@@ -1,4 +1,4 @@
-# Artifact Appendix
+# Artifact Appendixx
 
 Paper title: **Enhancing Metric Privacy With a Shuffler**
 
