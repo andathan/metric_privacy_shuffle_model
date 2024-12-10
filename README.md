@@ -84,9 +84,8 @@ python3 and the above commonly used libraries should be installed.
 
 
 ### Accessibility (All badges)
-https://github.com/andathan/metric_privacy_shuffle_model
-
-TO-DO: Add Tag
+Repository: https://github.com/andathan/metric_privacy_shuffle_model
+Tag: https://github.com/andathan/metric_privacy_shuffle_model/releases/tag/metric_shuffle_code
 
 ### Set up the environment (Only for Functional and Reproduced badges)
 On a Linux machine:
