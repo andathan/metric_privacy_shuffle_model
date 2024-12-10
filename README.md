@@ -75,7 +75,7 @@ No extra storage space is taken upon execution of the experiments. The experimen
 [To compute faster (less than 5 minutes) reduce the parameter D_MAX to 20 to produce results only when d=1,2,...,20 (LINE 43)]
 
 
-###### Aprox. 10 hours
+###### Aprox. 2-3 hours
 
 1. corrupted_shuffler.py
    
