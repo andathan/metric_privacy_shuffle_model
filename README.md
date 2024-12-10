@@ -65,12 +65,12 @@ No extra storage space is taken upon execution of the experiments. The experimen
 ##### Estimated Time:
 ###### Less than a minute
 1. plot_gdl.py
-2. calculate_boost.py 
 
 ###### Aprox. 1-2 hours
 1. exp1.py
 2. exp2.py
-3.  plot_conj.py
+3. plot_conj.py
+4. calculate_boost.py 
 
 ###### Aprox. 2-3 hours
 
