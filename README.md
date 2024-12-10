@@ -117,7 +117,7 @@ Consider the Geometric Mechanism in the Local Model (Geo-Local) with epsilon = e
 
 #### Main Result 3: The privacy of SGDL-Shuffle diminishes when the shuffler is compromised; Geo-Shuffle still maintains a reasonable privacy.
 
-In the case the shuffler is compromised the 3 mechanisms do not behave the same. SGDL-Shuffle's privacy significantly worsens, whereas Geo-Shuffle retains a sufficient level of privacy as discussed in Section 7 shown in Figure 6
+In the case that the shuffler is compromised the 3 mechanisms that we propose (RR-Shuffle, Geo-Shuffle, SGDL-Shuffle) do not behave the same. SGDL-Shuffle's privacy significantly worsens, whereas Geo-Shuffle retains a sufficient level of privacy as discussed in Section 7 shown in Figure 6.
 
 
 #### Main Result 4: Validity of Conjecture B.3: d=1 maximizes the ratio (4)
