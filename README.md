@@ -24,7 +24,7 @@ This repository includes the code for the experiments of our paper: Enhancing Me
 
 4. plot_conj.py
 
-	Plots the Conjecture B.3 (Figures 9-12)
+	Plots the Conjecture B.3 (Figures 10-12)
 
 5. 	plot_gdl.py (minor script, just visualizes a distribution)
 
