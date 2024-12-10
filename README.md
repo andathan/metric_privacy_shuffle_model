@@ -158,6 +158,8 @@ The parameters of the experiment are defined in parameters.py.
 
 Run the above command and compare the result to Figure 5. 
 
+NOTE: Since the resulting plot is a boxplot, the interquartile range might not match Figure 5 exactly. The goal is to observe that SGDL-Shuffle outperforms the other mechanisms, followed by Geo-Shuffle. The boxes for RR-Shuffle and Geo-Local might slightly overlap when the number of users is small; this means that Geo-Local might be better than RR-Shuffler a behavior already observed in Experiment 1.
+
 We use this experiment for Main Result 1, i.e. that SGDL-Shuffle has lower utility loss than every other mechanism, followed by Geo-Shuffle and then RR-shuffle. 
 
 
