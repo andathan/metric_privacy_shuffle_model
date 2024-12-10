@@ -217,7 +217,7 @@ a_list = []
 #For RR-Shuffle, Geo-Shuffle and SGDL -Shuffle
 #for both epsilons
 
-for n in range(2,N_MAX,5):
+for n in range(1,N_MAX,1):
 	recursion_counter=0
 	print("Running for ",n,"/",N_MAX)
 	results_sgdl.append(compute_privacy_sgdl_shuffle(epsilon,1/n,0))
