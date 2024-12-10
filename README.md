@@ -143,7 +143,7 @@ Run the above command and compare the result to Figure 4.
 
 NOTE: Due to the randomness of the created dataset, the resulting Figure might be slightly different than Figure 4. The goal is to check that SGDL-Shuffle is better than Geo-Shuffle which in turn is better than RR-Shuffle. Then RR-Shuffle should be better than Geo local when the number of users is increased.
 
-We use this experiment for Main Result 1, i.e. that SGDL-Shuffle has lower utility loss than every other mechanism, followed by Geo-Shuffle and then RR-shuffle (when n > aprox. 80). 
+We use this experiment for Main Result 1, i.e. that SGDL-Shuffle has lower utility loss than every other mechanism, followed by Geo-Shuffle and then RR-shuffle. 
 
 #### Experiment 2: Real world location experiment (Section 6.3., Figure 5)
 
@@ -153,28 +153,20 @@ python3 exp2/exp2.py 0.15 4000 1000 600
 
 Takes approximately 1-2 hours to run.
 
-The experiment tests the utility (MAE) of the proposed mechanisms on real-world location data.
+The experiment tests the utility (MAE) of the proposed mechanisms on a real-world location dataset.
 
 The parameters of the experiment are defined in parameters.py.
 
 Run the above command and compare the result to Figure 5. 
 
-We use this experiment for Main Result 1, i.e. that SGDL-Shuffle has lower utility loss than every other mechanism, followed by Geo-Shuffle and then RR-shuffle (when n > aprox. 60). 
-
+We use this experiment for Main Result 1, i.e. that SGDL-Shuffle has lower utility loss than every other mechanism, followed by Geo-Shuffle and then RR-shuffle. 
 
 
 #### Experiment 3: Geo-Shuffle amplifies the privacy of Geo-Local (Figure 3) 
 Figure 3 shows the final epsilon of Geo-Shuffle when the starting epsilon_geo (of Geo-Local) is set. 
 For the blue line run:
 ```bash
-python3 calculate_boost.py 0.1 0.001 
-```
-and for the rest lines:
-```bash
-python3 calculate_boost.py 0.2 0.001 
-python3 calculate_boost.py 0.3 0.001 
-python3 calculate_boost.py 0.4 0.001 
-python3 calculate_boost.py 0.8 0.001 
+python3 calculate_boost.py
 ```
 
 Compare the results with Figure 3.
@@ -182,7 +174,7 @@ Compare the results with Figure 3.
 We use this experiment to conclude in Main Result 2 i.e. that the resulting epsilon is notably smaller than the initial one (epsilon_geo), in all cases.
 
 #### Experiment 4: Validity of Conjecture B.3: d=1 maximizes the ratio (4)
-Figures 10-12 experimentally show the validity of conjecture for any combination of parameters. In each figure, the script outputs the result of the ratio (4), which we name as the function K(r,d) as d increases. Multiple values are shown for r (an integer which corresponds to alpha of Theorem 4.2.).
+Figures 10-12 experimentally show the validity of Conjecture B.3. for any combination of parameters. In each figure, the script outputs the result of the ratio (4), which we name as the function K(r,d), as d increases. Multiple values are shown for r (an integer which corresponds to alpha of Theorem 4.2. and ratio (4) ).
 
 Figure 10:
 ```bash
@@ -199,7 +191,7 @@ Figure 12:
 python3 plot_conj.py 0.8 0.001 10000
 ```
 
-Observe that in all cases d=1 maximizes the ratio. 
+Compare the results with the corresponding Figures. Observe that in all cases d=1 maximizes the ratio. 
 
 
 ## Limitations (Only for Functional and Reproduced badges)
