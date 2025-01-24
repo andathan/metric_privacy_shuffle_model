@@ -170,5 +170,6 @@ plt.plot(n_list, geo_shuffle_e5, label = epsilon_geo_latex + " = " + str(e5))
 
 
 plt.legend()
-plt.show()
+name_of_file = "calculate_boost.pdf"
+plt.savefig(name_of_file, format="pdf", bbox_inches="tight")
 

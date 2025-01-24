@@ -539,5 +539,5 @@ def main():
 	name_of_file = "exp1_max_n_"+str(n)+".pdf"
 	plt.savefig(name_of_file, format="pdf", bbox_inches="tight")
 
-	plt.show()
+	#plt.show()
 main()

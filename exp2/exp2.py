@@ -76,7 +76,7 @@ def apply_mechanism(mechanism_name, database,n,k,epsilon,delta):
 	######## RR ########
 	if (mechanism_name == "RR"):
 		if (rr_lambda==-1):
-			l = int(calculate_lambda (n, epsilon, k, e_threshold,delta))
+			l = int(calculate_lambda (n, epsilon, k, epsilon/3,delta))
 			rr_lambda = l
 			secret = rr_array
 		else:
@@ -214,7 +214,6 @@ if __name__ == '__main__':
 
 	epsilon = desired_epsilon/(NUMBER_OF_SQUARES * math.sqrt(2) )#epsilon that will be used for our mechanisms
 
-	e_threshold =  epsilon/10   #used in RR and geo shuffle when trying to find epsilon. how close to the target epsilon is close enough?
 
 
 
@@ -384,7 +383,7 @@ if __name__ == '__main__':
 	#plt.plot(n_list,total_geo_shuffle , color="cyan")
 	#plt.plot(n_list,total_sgdl_shuffle, color ="blue")
 	#plt.plot(n_list,total_rr, color ="red")
-	plt.ylim(-50, 1500)
+	plt.ylim(-50, 1000)
 
 
 	plt.xlabel("Number of Users ")
@@ -400,4 +399,4 @@ if __name__ == '__main__':
 	#f.write("-------------------\n")
 	#f.close()
 	plt.savefig("exp2_box_plot.pdf", format="pdf", bbox_inches="tight")
-	plt.show()
+	#plt.show()
