@@ -90,4 +90,5 @@ plt.xlabel("y", fontsize = 40)
 plt.tick_params(axis='x', labelsize=20)
 plt.tick_params(axis='y', labelsize=20)
 plt.grid()
-plt.show()
+name_of_file = "plot_gdl.pdf"
+plt.savefig(name_of_file, format="pdf", bbox_inches="tight")

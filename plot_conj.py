@@ -136,4 +136,5 @@ plt.ylabel("K(r,d)", size= 40 )
 plt.legend(loc = "center", bbox_to_anchor=[0.5, 1.05], 
           ncol=3, fancybox=True, shadow=True, fontsize = 30, markerscale = 11)
 plt.grid()
-plt.show()
+name_of_file = "plot_conj.pdf"
+plt.savefig(name_of_file, format="pdf", bbox_inches="tight")
