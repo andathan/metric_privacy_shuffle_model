@@ -13,7 +13,7 @@ import itertools
 
 def calculate_lambda (n, target_e,k,e_threshold,delta):
 	global rr_lambda
-	#print(e_threshold)
+	print(e_threshold)
 	#print("CALLED WITH e threshold, ", e_threshold)
 	for l in range(1,n*k,1):
 		try:#check if sqrt does not take a negative input
@@ -22,12 +22,12 @@ def calculate_lambda (n, target_e,k,e_threshold,delta):
 			continue
 		e = e0 
 		if (abs(e-target_e)<= e_threshold): 
-			#print("Will get",e,"with this l=",l, "(target e was",target_e,")")
+			print("Will get",e,"with this l=",l, "(target e was",target_e,")")
 			rr_lambda = l 
 			return l
 	#nothing found...
 	#search again with greater theshold
-	return calculate_lambda (n, target_e,k,0.0001+ e_threshold ,delta)
+	return calculate_lambda (n, target_e,k,2* e_threshold ,delta)
 
 
 def rr_shuffle_quick(number_of_ones, number_of_zeros, l , debias,r ):

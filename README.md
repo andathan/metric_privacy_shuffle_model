@@ -63,6 +63,7 @@ No extra storage space is taken upon execution of the experiments. The experimen
 
 
 ##### Estimated Time:
+The estimated times provided below are based on running the experiments on a Mac M1 laptop.
 ###### Less than 10 minutes
 1. plot_gdl.py
 2. calculate_boost.py 
@@ -70,10 +71,10 @@ No extra storage space is taken upon execution of the experiments. The experimen
 ###### Aprox. 2-3 hours
 1. exp1.py
 2. exp2.py
-3. plot_conj.py
-4. corrupted_shuffler.py
+3. corrupted_shuffler.py
   
-
+###### Aprox. 5-6 hours
+1. plot_conj.py
 
 
 
