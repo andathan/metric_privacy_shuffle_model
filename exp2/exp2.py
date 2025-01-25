@@ -76,7 +76,8 @@ def apply_mechanism(mechanism_name, database,n,k,epsilon,delta):
 	######## RR ########
 	if (mechanism_name == "RR"):
 		if (rr_lambda==-1):
-			l = int(calculate_lambda (n, epsilon, k, epsilon/3,delta))
+			epsilon_for_threshold = 2*epsilon 
+			l = int(calculate_lambda (n, epsilon, k, epsilon_for_threshold/7 ,delta))
 			rr_lambda = l
 			secret = rr_array
 		else:
@@ -131,8 +132,8 @@ def find_utility_of_mechanism(mechanism_name, user_x_pos_db, user_y_pos_db,n,k,e
 	#print("Computing ", mechanism_name, "...")
 	results = []
 	for i in range(MAX_RUNS):
-		x_centroid = trim_invalid(apply_mechanism(mechanism_name, user_x_pos_db,n,k,epsilon,delta),k)   
-		y_centroid=  trim_invalid(apply_mechanism(mechanism_name, user_y_pos_db,n,k,epsilon,delta),k) 
+		x_centroid = trim_invalid(apply_mechanism(mechanism_name, user_x_pos_db,n,k,epsilon,delta/2),k)   
+		y_centroid=  trim_invalid(apply_mechanism(mechanism_name, user_y_pos_db,n,k,epsilon,delta/2),k) 
 		distance_to_actual =  find_euclenian_distance(grid_centroid_x_pos, grid_centroid_y_pos, x_centroid, y_centroid)
 		results.append(distance_to_actual)
 
